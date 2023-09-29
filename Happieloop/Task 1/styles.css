@@ -1,0 +1,60 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+
+/* Dropdown Styles */
+.dropdown .submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Accessibility Styles */
+.menu a:focus {
+    background-color: #555;
+    outline: none;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .dropdown .submenu {
+        position: static;
+        display: none;
+    }
+}
